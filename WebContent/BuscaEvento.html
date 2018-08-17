@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registro de usuario</title>
+<style>
+input[type=text], select {
+    width: 100%;
+    height: 40px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #1a53ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    height: 40px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=date], select {
+    width: 100%;
+    height: 40px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+table {
+	margin: 0 auto;
+}
+
+</style>
+</head>
+
+<body>
+
+	<h1 style="text-align: center">Busqueda de eventos</h1>
+	<form action="Eventos.jsp" method="post">
+
+		<table width="30%">
+			<tr>
+				<td width="25%"><label for="evento">Nombre de evento : </label></td>
+				<td width="75%"><input type="text" name="evento" id="evento"></td>
+			</tr>
+			<tr>
+				<td><label for="fechaInicio">Fecha Inical: </label></td>
+				<td><input type="date" name="fechaInicial" id="fechaInicial"/></td>
+			</tr>
+			<tr>
+				<td><label for="apellidoM">Fecha Final: </label></td>
+				<td><input type="date" name="fechaFinal" id="fechaFinal"/></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit"
+					name="button" id="button" value="Consultar"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
